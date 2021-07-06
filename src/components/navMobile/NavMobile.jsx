@@ -3,7 +3,7 @@ import { useState } from "react"
 import "./style"
 import useStyles from './style';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+
 
 import { Keyframes, config } from 'react-spring';
 import delay from 'delay';
@@ -64,15 +64,27 @@ const NavMobile = () => {
     const classes = useStyles();
     const [menuOpen, setMenuOpen] = useState(false);
 
+
+
+
+
     const handleBtnClick = () => {
         setMenuOpen(!menuOpen)
     };
+
 
     return (
         <>
             <div id="mobile-nav" className={classes.navBar} >
                 <HomeRoundedIcon className={classes.icon} fontSize="large" />
-                <MenuRoundedIcon className={classes.icon} onClick={handleBtnClick} fontSize="large" />
+                <div className={menuOpen ? "header menu-opened" : "header"}>
+                    <div onClick={handleBtnClick} className="burger-container">
+                        <div id="burger">
+                            <div className="bar topBar"></div>
+                            <div className="bar btmBar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="mobile-menu">
                 <Menu

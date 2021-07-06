@@ -2,13 +2,25 @@
 
 
 li{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.712);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 8px;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 li:active{
     text-shadow: 0px 0px 1px rgb(223, 206, 206);
 }
+
+
+
+
+
+
+
+
+
+
+
