@@ -70,9 +70,9 @@ const NavMobile = () => {
 
     return (
         <>
-            <div id="mobile-nav" className={classes.root} >
-                <HomeRoundedIcon fontSize="large" />
-                <MenuRoundedIcon onClick={handleBtnClick} fontSize="large" />
+            <div id="mobile-nav" className={classes.navBar} >
+                <HomeRoundedIcon className={classes.icon} fontSize="large" />
+                <MenuRoundedIcon className={classes.icon} onClick={handleBtnClick} fontSize="large" />
             </div>
             <div id="mobile-menu">
                 <Menu
